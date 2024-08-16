@@ -1,3 +1,4 @@
+
 *,
 *:before,
 *:after {
@@ -22,8 +23,8 @@ body {
 }
 
 .box {
-  width: 780px;
-  height: 640px;
+  width: 1000px;
+  height: 700px;
   position: absolute;
   border-radius: 25px;
   box-shadow: 0 0 10px rgb(0 0 0 / 30%);
@@ -31,11 +32,13 @@ body {
   overflow: hidden;
   top: 50%;
   transition: 800ms ease-in-out;
+  background-size: cover;
+  background-position: 50% 50%; 
 }
 
 .box:first-of-type {
     z-index: 5;
-    /* opacity: 0; */
+    opacity: 0;
     left: 15%;
     transform: translate(-50%, -50%) rotateY(-10deg);
 
@@ -71,6 +74,3 @@ body {
     z-index: 2;
     transform: translate(-50%, -50%) rotateY(-10deg) translateZ(-250px);
 }
-
-
-
